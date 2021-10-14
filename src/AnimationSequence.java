@@ -48,8 +48,7 @@ public class AnimationSequence {
         canvas.update();
         canvas.waitForClick();
 
-        // Make a loop that update()s the polygon an appropriate number of times and draws it on the canvas
-        // to show the animation.
+        // Make a loop that advances through each frame of the animation draws it on the canvas.
 
         // Pseudocode for this loop:
         // Loop over a time variable that counts from time = 0 to time = total time of all the animations, counting by 20ms increments.
