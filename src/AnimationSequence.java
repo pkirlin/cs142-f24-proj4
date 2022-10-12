@@ -7,13 +7,13 @@
 public class AnimationSequence {
     private TranslationAnimation[] translations;
     private RotationAnimation[] rotations;
-    int nextTrans, nextRot;
+    private int nextTransIndex, nextRotIndex;
 
     public AnimationSequence(int numTranslations, int numRotations) {
         translations = new TranslationAnimation[numTranslations];
         rotations = new RotationAnimation[numRotations];
-        nextRot = 0;
-        nextTrans = 0;
+        nextTransIndex = 0;
+        nextRotIndex = 0;
     }
 
     /** Add a new TranslationAnimation to this sequence. */
