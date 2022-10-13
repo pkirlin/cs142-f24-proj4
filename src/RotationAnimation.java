@@ -1,20 +1,20 @@
 /**
  * A RotationAnimation is a rotation applied to a ComboPolygon that takes rotates the ComboPolygon around
- * an (x, y) point in the plane, rotates a certain number of degrees, and starts and ends at specific moments in time.
+ * an (a, b) point in the plane, rotates a certain number of degrees, and starts and ends at specific moments in time.
  *  Note that this code assumes the animation runs at 50 frames/second, which means each frame
  *  is displayed for 20 milliseconds.
  */
 public class RotationAnimation {
-    private int rotateAroundX;
-    private int rotateAroundY;
+    private int rotateAroundA;
+    private int rotateAroundB;
     private int degrees;
     private int startMs;
     private int endMs;
     private ComboPolygon polygon;
 
-    public RotationAnimation(int rotateAroundX, int rotateAroundY, int degrees, int startMs, int endMs, ComboPolygon polygon) {
-        this.rotateAroundX = rotateAroundX;
-        this.rotateAroundY = rotateAroundY;
+    public RotationAnimation(int rotateAroundA, int rotateAroundB, int degrees, int startMs, int endMs, ComboPolygon polygon) {
+        this.rotateAroundA = rotateAroundB;
+        this.rotateAroundB = rotateAroundA;
         this.degrees = degrees;
         this.startMs = startMs;
         this.endMs = endMs;
