@@ -27,8 +27,8 @@ public class ComboPolygon {
         // your code here
     }
 
-    /** Rotate this ComboPolygon around the point (x, y) by the degrees given by angle. */
-    public void rotateAround(double x, double y, double angle)
+    /** Rotate this ComboPolygon around the point (a, b) by the degrees given by angle. */
+    public void rotateAround(double a, double b, double angle)
     {
         // your code here
     }
